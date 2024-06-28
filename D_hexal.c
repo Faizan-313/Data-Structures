@@ -13,15 +13,14 @@ void hexal(int num)
     {
         int r = num%16;
         hexal(num/16);
-        if (r<16 && r>9)
-            printf("%c",55+r);
-        else
-            printf("%d",r);
+        printf("%d",r);
     }
 }
 
 int main()
 {
-    int num=44;
+    int num;
+    printf("Enter the number: ");
+    scanf("%d",&num):
     hexal(num);
 }
