@@ -1,3 +1,5 @@
+//without changing the orginal string
+
 #include <iostream>
 using namespace std;
 
