@@ -31,6 +31,8 @@ void merge(int *arr, int s,int e, int mid){
     while(j<len2){
         arr[k++] = arr2[j++];
     }
+    delete []arr1;
+    delete []arr2;
 }
     
 
