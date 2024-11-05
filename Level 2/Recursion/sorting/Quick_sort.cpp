@@ -11,10 +11,10 @@ int partition(int *arr,int s, int e){
     
     for(int i =s,j=e; i<index && j>index;){
         if(arr[i]>arr[index] && arr[j]<arr[index]) swap(arr[i++],arr[j--]);
-        else if(arr[i]>arr[index] && arr[j]>arr[index]) j--;
+        else if(arr[j]>arr[index]) j--;
         else i++;
 
-        //or we can also go by this approach
+        //or we can also go by this approach the above approach might break in some inputs
 
         // while(arr[i]<arr[index]) i++;
         // while(arr[j]>arr[index]) j--;
